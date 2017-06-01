@@ -1,0 +1,71 @@
+body,html,ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box{
+    height: 400px;
+    width:800px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: auto;
+}
+.menu{
+    height: 30px;
+    width: 100%;
+    background: #ddd;
+}
+.menu li{
+    width:16.6666%;
+    float: left;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+li:hover{
+    color:red;
+}
+.active{
+    color:red
+}
+.tools{
+    height: 370px;
+    width: 100px;
+    position: relative;
+    background: #ddd;
+    float: left;
+}
+.tools li{
+    border-bottom: 1px solid #ddd;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+input[type=number]{
+    width: 90px;
+    height: 30px;
+}
+.canvas{
+    float: left;
+    height: 370px;
+    width: 700px;
+    position: relative;
+    box-sizing: border-box
+}
+.canvas .copy{
+    height:370px;
+    width: 700px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+.xpp{
+    position: absolute;
+    left: 0;
+    top:0;
+width: 10px;
+height: 10px;
+    border:1px solid #000;
+    display: none;
+}

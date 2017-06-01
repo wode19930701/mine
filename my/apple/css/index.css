@@ -1,0 +1,177 @@
+@font-face {font-family: "iconfont";
+    src: url('../font/iconfont.eot?t=1472114421'); /* IE9*/
+    src: url('../font/iconfont.eot?t=1472114421#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff?t=1472114421') format('woff'), /* chrome, firefox */
+    url('../font/iconfont.ttf?t=1472114421') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg?t=1472114421#iconfont') format('svg'); /* iOS 4.1- */
+}
+.pingguo:before {
+    font-family: iconfont;
+    content: "\e643"; }
+.fangdajing:before {
+    font-family: iconfont;
+    content: "\e607"; }
+.gouwudai:before {
+    font-family: iconfont;
+    content: "\e616"; }
+body,ul,h2,h3,h1,p,li,a,dd{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+    color:#fff;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+.kuang1{
+    height:44px;
+    width:100%;
+    background: #000;;
+}
+.nav{
+    width: 1024px;
+    margin: 0 auto;
+}
+.nav a{
+    display: block;
+    float: left;
+    width:11%;
+    text-align: center;
+    line-height: 44px;
+}
+.nav a:nth-of-type(1){
+     font-size: 25px;
+     line-height: 40px;
+ }
+.nav a:nth-of-type(7){
+    font-size: 14px;
+    line-height: 44px;
+}
+.nav a:nth-of-type(8){
+     font-size: 35px;
+     line-height: 40px;
+ }
+.nav a:nth-of-type(9){
+    font-size: 16px;
+    line-height: 40px;
+}
+.banner{
+    width: 100%;
+    height: 610px;
+    position: relative;
+}
+.banner>div{
+    width: 100%;
+    position: absolute;
+    left:0;
+    right:0;
+    height: 100%;
+}
+.banner .button{
+    position: absolute;
+    left: 48%;
+    bottom: 10%;
+    width: 56px;
+    height: 10px;
+}
+.banner .button div{
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 2px;
+    float: left;
+    border: 1px solid #333;
+}
+.banner>div:nth-of-type(1){
+    background:url(../img/iphone_6s_medium.jpg) no-repeat;
+
+    background-size:50% 50%;
+    background-position: center;
+}
+.banner>div:nth-of-type(2){
+    background:url(../img/ipad_pro_family_medium.jpg) no-repeat;
+    background-size:50% 50%;
+    background-position: center;
+}
+.banner>div:nth-of-type(3){
+    background:url(../img/macbook_medium.png) no-repeat;
+    background-size:50% 50%;
+    background-position: center;
+}
+.banner>div:nth-of-type(4){
+    background:url(../img/apple_watch_trio_medium.jpg) no-repeat;
+    background-size:50% 50%;
+    background-position: center;
+}
+
+.shen .row div:nth-of-type(1){
+    background-image:url(../img/tradeup_medium.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.shen .row div:nth-of-type(2){
+    background-image:url(../img/public_betas_medium.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.shen .row div:nth-of-type(3){
+    background-image:url(../img/apple_music_exclusive_medium.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.shen .row div:nth-of-type(4){
+    background-image:url(../img/hp_tiles_lastchance_medium.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.shen .row div{
+    height:200px;
+    border:2px solid #fff;
+}
+.foot {
+    background: #F2F2F2;
+    height: 368px;
+
+}
+.foot .top{
+    height:252px;
+    width:980px;
+    margin:0 auto;
+    padding-top: 30px;
+}
+.foot .top>div{
+    width: 20%;
+    height: auto;
+    float: left;
+    color: #111;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.foot .top div a{
+    height: auto;
+    color: #555;
+    font-size: 11px;
+    line-height: 20px;
+}
+.foot .bottom{
+    width:980px;
+    margin:0 auto;
+    height: auto;
+    color: #999;
+    font-size: 11px;line-height: 30px;
+}
+.foot .bottom a{
+    color: #666;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.foot .bottom a:nth-of-type(6){
+    float: right;
+}
+.foot .bottom div:nth-of-type(1){
+    border-bottom: 1px solid #ddd;
+}

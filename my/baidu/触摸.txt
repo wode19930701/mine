@@ -1,0 +1,51 @@
+框架 
+
+h5 原生事件
+touchstart
+touchmove
+touchend
+pc监测不到
+
+移动端 点击事件会有延迟
+触摸事件
+百度 js 内部判断
+什么意图
+touch。js
+
+
+touch.on（div，“tap”，function（）{
+
+}）
+
+tap 轻击
+swipe 滑动
+swipelife 向左滑动
+swiperight
+     down
+      up
+drag 拖拽
+hold 长按
+doubletap 双击
+
+direction 方向
+x y       滑动的距离
+
+旋转
+先添加
+touch。on("div,"touchstart,function(e){
+e.startRotate()
+e.prevenDefult})
+
+拖拽完成的时候 判断
+dragend
+先判断方向
+
+dragstart
+
+监测 addevebt webkittransitionend
+
+拖拽的方向
+开关
+数字关联
+判断num最前面
+

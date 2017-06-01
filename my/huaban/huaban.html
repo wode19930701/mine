@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="3.css">
+    <script src="jquery.js"></script>
+    <script src="3.js"></script>
+    <script src="shape.js"></script>
+</head>
+<body>
+    <div class="box">
+        <ul class="menu">
+            <li>文件</li>
+            <li>画图</li>
+            <li>颜色</li>
+            <li>类型</li>
+            <li>线宽</li>
+            <li>橡皮</li>
+        </ul>
+        <div class="tools">
+            <ul>
+                <li>打开</li>
+                <li>保存</li>
+                <li>关闭</li>
+            </ul>
+            <ul class="huatu">
+                <li data-role="line">线</li>
+                <li data-role="rect">矩形</li>
+                <li data-role="arc">圆</li>
+                <li data-role="bian">多边形</li>
+                <li data-role="jiao">多角形</li>
+            </ul>
+            <ul class="yanse">
+                <li><input type="color"></li>
+                <li><input type="color"></li>
+            </ul>
+            <ul class="leixing">
+                <li data-role="stroke">边框</li>
+                <li data-role="fill">填</li>
+            </ul>
+            <ul class="xiankuan">
+                <li value="1">细</li>
+                <li value="3">中</li>
+                <li value="5">宽</li>
+                <li><input type="number"></li>
+            </ul>
+            <ul class="xp">
+                <li><input type="number"></li>
+            </ul>
+        </div>
+        <div class="canvas" >
+            <canvas width="700" height="370"></canvas>
+            <div class="copy">
+            </div>
+            <div class="xpp"></div>
+        </div>
+    </div>
+</body>
+</html>

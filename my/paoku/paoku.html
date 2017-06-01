@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="hit.js"></script>
+    <script src="game.js"></script>
+    <script>
+        window.onload=function(){
+            var ow=document.documentElement.clientWidth
+            var oh=document.documentElement.clientHeight
+            var canvas=document.querySelector("canvas")
+            var runImg=document.querySelectorAll(".run")
+            var jumpImg=document.querySelectorAll(".jump")
+            var hiderImg=document.querySelectorAll(".hider")
+            canvas.width=ow
+            canvas.height=oh
+            var cobj=canvas.getContext("2d")
+            var game1=new game(canvas,cobj,runImg,jumpImg,hiderImg)
+            game1.update()
+            game1.play()
+            game1.key()
+            window.onresize=function(){
+                ow=document.documentElement.clientWidth
+                oh=document.documentElement.clientHeight
+                canvas.width=ow
+                canvas.height=oh
+            }
+            window.onresize()
+        }
+        
+    </script>
+
+</head>
+<style>
+    html,body{
+        width:100%;
+        height: 100%;
+        overflow: hidden;
+        margin:0;
+        padding:0;
+    }
+    canvas{
+        background: url("img/bg.png") repeat-x;
+        background-size: cover;
+    }
+</style>
+<body>
+    <canvas style="background-position:300px"></canvas>
+    <img src="img/bg.png" alt="">
+    <img src="img/run1.png" alt="" class="run">
+    <img src="img/run2.png" alt="" class="run">
+    <img src="img/run3.png" alt="" class="run">
+    <img src="img/run4.png" alt="" class="run">
+    <img src="img/run5.png" alt="" class="run">
+    <img src="img/run6.png" alt="" class="run">
+    <img src="img/run7.png" alt="" class="run jump">
+    <img src="img/run8.png" alt="" class="run">
+    <img src="img/run9.png" alt="" class="run">
+    <img src="img/hider1.png" alt="" class="hider">
+    <img src="img/hider2.png" alt="" class="hider">
+    <img src="img/hider3.png" alt="" class="hider">
+    <img src="img/hider4.png" alt="" class="hider">
+</body>
+</html>

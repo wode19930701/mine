@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<script src="123.js"></script>
+	<script src="functions.js"></script>
+	<script src="animate.js"></script>
+	<script>
+		$(function(){
+			var obj=new game()
+			var kaishi=$(".kaishi")[0]
+			kaishi.onclick=function(){
+				kaishi.style.display="none"
+				obj.play()
+			}
+		})
+	</script>
+	<style>
+		.shengming,.sm,.fenshu,.fen,.zfenshu,.zfen,.guanqia,.guan{
+			float: left;
+			width: 150px;
+			height: 40px;
+			line-height: 40px;
+		}
+		.one,.two,.three,.frue{
+			height: 40px;
+			width: 300px;
+			font-size: 30px;
+			color: orange;
+			font-weight: bold;
+		}
+		body{
+			margin:0;
+			padding: 0;
+			background: url(img/1.jpg);
+		}
+		.kaishi{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background:url("img/2.png") no-repeat 0px 0px;
+			/*display: none*/
+		}
+		.shibai{
+			width: 132px;
+			height: 120px;
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			display: none;
+		}
+		.shang1{
+			width: 132px;
+			height: 50px;
+		}
+		.xiazuo1,.xiayou1{	
+			padding-top: 3px;	
+			width: 66px;
+			height: 40px;
+			float: left;
+			line-height: 15px;
+			text-align: center;
+			color:orange;
+		}
+		.xiazuo1{
+			background:url("img/4.png") no-repeat 0px 0px;
+		}
+		.xiayou1{
+			background:url("img/5.png") no-repeat 0px 0px;
+		}
+		.guoguan{
+			width: 270px;
+			height: 120px;
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background:url("img/7.png") no-repeat 0px 0px;
+			display: none;
+		}
+		.xiayiguan{
+			margin-top: 100px;
+			margin-left:85px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="one">
+			<div class="shengming">生命值</div>
+			<div class="sm"></div>
+		</div>
+		<div class="two">
+			<div class="fenshu">当前分数</div>
+			<div class="fen"></div>
+		</div>
+		<div class="three">
+			<div class="zfenshu">总分数</div>
+			<div class="zfen"></div>
+		</div>	
+		<div class="frue">
+			<div class="guanqia">当前关卡</div>
+			<div class="guan"></div>
+		</div>	
+		<div class="kaishi"></div>
+		<div class="shibai">
+			<div class="shang1"><img src="img/3.png" alt=""></div>
+			<div class="xia1">
+				<div class="xiazuo1">重新<br>开始</div>
+				<div class="xiayou1">退出<br>游戏</div>
+			</div>
+		</div>
+		<div class="guoguan">
+			<div class="xiayiguan"><img src="img/8.png" alt=""></div>
+		</div>
+	</div>
+</body>
+</html>

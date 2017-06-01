@@ -1,0 +1,15 @@
+@keyframes cloud {
+      100%{
+          transform: translate(-50%,0);
+      }
+  }
+@keyframes down {
+    100%{
+        transform: translate(0,10px);
+    }
+}
+@keyframes rotate {
+    100%{
+        transform: rotateY(360deg);
+    }
+}
